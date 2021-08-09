@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TorreJsonReader.VO
 {
-    class LocationVO
+    public class LocationVO
     {
         public String Name { get; set; }
         public String ShortName { get; set; }

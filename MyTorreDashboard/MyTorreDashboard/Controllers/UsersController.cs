@@ -8,24 +8,11 @@ using TorreJsonReader.VO;
 
 namespace MyTorreDashboard.Controllers
 {
-    public class HomeController : Controller
+    public class UsersController : Controller
     {
+        // GET: Users
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "What is My Torre Dashboard (MTD)?.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Who Developer My Torre Dashboard (MTD) ? .";
-
             return View();
         }
 

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TorreJsonReader.VO
 {
-    public class LinkVO
+    class ContextVO
     {
-        public String Id { get; set; }
-        public String Name { get; set; }
-        public String Address { get; set; }
+        public Object Signaled { get; set; }
     }
 }

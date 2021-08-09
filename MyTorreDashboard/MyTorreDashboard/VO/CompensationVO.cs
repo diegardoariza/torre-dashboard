@@ -15,5 +15,6 @@ namespace TorreJsonReader.VO
         public Int32 MaxAmount { get; set; }
         public String Periodicity { get; set; }
         public Boolean Visible { get; set; }
+
     }
 }

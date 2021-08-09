@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TorreJsonReader.VO
 {
-    class FlagsVO
+    public class FlagsVO
     {
         public Boolean Benefits { get; set; }
         public Boolean Canary { get; set; }

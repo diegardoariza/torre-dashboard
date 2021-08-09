@@ -158,24 +158,31 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BL\RequestManager.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\UserViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="VO\AggregatorsItemVO.cs" />
+    <Compile Include="VO\AggregatorsVO.cs" />
     <Compile Include="VO\AgreementVO.cs" />
     <Compile Include="VO\AnalysisVO.cs" />
     <Compile Include="VO\ApplicantLocationRequirementVO.cs" />
     <Compile Include="VO\AttachementVO.cs" />
     <Compile Include="VO\BaseSalaryVO.cs" />
     <Compile Include="VO\CommitmentVO.cs" />
+    <Compile Include="VO\CompensationUserVO.cs" />
     <Compile Include="VO\CompensationVO.cs" />
+    <Compile Include="VO\ContextVO.cs" />
     <Compile Include="VO\DetailVO.cs" />
     <Compile Include="VO\EducationalRequirementVO.cs" />
     <Compile Include="VO\ExperienceRequiredVO.cs" />
@@ -183,6 +190,8 @@
     <Compile Include="VO\FlagsVO.cs" />
     <Compile Include="VO\GroupVO.cs" />
     <Compile Include="VO\IdentifierVO.cs" />
+    <Compile Include="VO\InputPersonVO.cs" />
+    <Compile Include="VO\InputVO.cs" />
     <Compile Include="VO\InterestVO.cs" />
     <Compile Include="VO\JobLanguageVO.cs" />
     <Compile Include="VO\LanguageVO.cs" />
@@ -191,17 +200,28 @@
     <Compile Include="VO\MediaItemVO.cs" />
     <Compile Include="VO\MediaVO.cs" />
     <Compile Include="VO\MembersVO.cs" />
+    <Compile Include="VO\MetaVO.cs" />
     <Compile Include="VO\OpportunityVO.cs" />
     <Compile Include="VO\OrganizationVO.cs" />
+    <Compile Include="VO\PaginationVO.cs" />
     <Compile Include="VO\PersonalityTraitsResultsVO.cs" />
     <Compile Include="VO\PersonVO.cs" />
     <Compile Include="VO\PlaceVO.cs" />
     <Compile Include="VO\PrefiledStatusVO.cs" />
     <Compile Include="VO\ProfessionalCultureGenomeResultsVO.cs" />
+    <Compile Include="VO\QueryVO.cs" />
+    <Compile Include="VO\QuestionVO.cs" />
+    <Compile Include="VO\RankerVO.cs" />
+    <Compile Include="VO\ResultJobVO.cs" />
+    <Compile Include="VO\ResultUserVO.cs" />
     <Compile Include="VO\SerpTagsVO.cs" />
+    <Compile Include="VO\SkillVO.cs" />
     <Compile Include="VO\StatsVO.cs" />
     <Compile Include="VO\StrengthVO.cs" />
     <Compile Include="VO\TorreJobVO.cs" />
+    <Compile Include="VO\TorreSearchJobVO.cs" />
+    <Compile Include="VO\TorreSearchUserVO.cs" />
+    <Compile Include="VO\TorreSearchVO.cs" />
     <Compile Include="VO\TorreUserVO.cs" />
     <Compile Include="VO\ValueVO.cs" />
   </ItemGroup>
@@ -264,6 +284,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

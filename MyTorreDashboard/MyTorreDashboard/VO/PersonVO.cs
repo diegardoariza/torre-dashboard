@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TorreJsonReader.VO
 {
-    class PersonVO
+    public class PersonVO
     {
         public String ProfessionalHeadline { get; set; }
         public float Completion { get; set; }
@@ -31,5 +31,8 @@ namespace TorreJsonReader.VO
         public Boolean Claimant { get; set; }
         public String SummaryOfBio { get; set; }
         public String PublicId { get; set; }
+        public Boolean Member { get; set; }
+        public Boolean Manager { get; set; }
+        public Boolean Poster { get; set; }
     }
 }

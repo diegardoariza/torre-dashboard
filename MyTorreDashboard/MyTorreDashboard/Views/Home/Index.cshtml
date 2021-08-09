@@ -1,9 +1,40 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>My Torre Dashboard</h1>
+<div id="app" class="jumbotron">
+    <h1>{{ message }}</h1>
     <p class="lead">Below add your Torre user and we will generate for you a profesional dashboard.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <div>
+        <ul>
+            <li v-for="item in list">{{item.Username }} : {{item.Name}}</li>
+        </ul>
+    </div>
 </div>
+
+@section scripts{
+    <script>
+        var url = '@Url.RouteUrl("Default")';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Check Torre People List!',
+                list: []
+            },
+
+            created: function () {
+                axios.get(url + "/GetUsers")
+                .then(function (response) {
+                    console.log(response.data);
+                    app.list = response.data
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            }
+        })
+    </script>
+}
